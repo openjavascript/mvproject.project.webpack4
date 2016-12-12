@@ -84,7 +84,7 @@ var config = {
 }
 
 /* 为每个监听页面编译生成新的html文件 */
-foreachFolder(_watchPath,function(list){
+/*foreachFolder(_watchPath,function(list){
 	for(var i = 0,item; item = list[i++];){
         var filename = item[0];
 		if(/\.html$/.test(filename)){
@@ -99,7 +99,7 @@ foreachFolder(_watchPath,function(list){
 			}));
 		}
 	}
-});
+});*/
 
 
 module.exports = config;
