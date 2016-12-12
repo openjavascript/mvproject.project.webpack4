@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>project name-project desc</title>
+    <meta name="Keywords" content="project keywords">
+    <meta name="Description" content="project desc">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <!--<link rel="shortcut icon" type="image/x-icon" href="http://p2.qhimg.com/t0178afa15ec31bc376.png" />-->
+
+    <script>
+/*    (function(){*/
+        //[> 这里的判断方式必须与H5保持一致，避免不同策略导致循环跳转 <]
+        //if ('ontouchstart' in window) {
+            
+            //[> PC跳移动配置，新页面支持需要加到这个白名单中 <]
+            //var redirectUrl ={
+                //'/pc/index.html':'/mobile/index.html',
+                //'/pc/list.html':'/mobile/list/list.html',
+                //'/pc/view.html':'/mobile/view.html'
+            //}[location.pathname];
+            
+            //if(redirectUrl){
+                //location.href = redirectUrl + location.search;
+                //document.write('<style>body{display:none}<\/style>');
+            //}
+        //}
+    /*})();*/
+</script>
+
+
+<link href="static/js/../css/vendors.css?7bedb3bb36cc3a9344bf" rel="stylesheet"><link href="static/js/../css/index.css?7bedb3bb36cc3a9344bf" rel="stylesheet"></head>
+<body>
+    <!-- 通用页面顶栏 -->
+    <div id="js_header" class="header">
+    <div class="hd-wrap ">
+        <div class="logo">
+            <a href="./index.html"><img src="http://p5.yx-s.com/d/inn/d7519bef/mvproject_logo.png" /></a>
+        </div>
+        <div class="user-info">
+            <div class="_logouted">
+                <a class="_login" href="###" hidefocus="true">登录</a>
+                &nbsp;|&nbsp;
+                <a class="_reg" href="###" hidefocus="true">注册</a>
+            </div>
+            <div class="_logined" style="display:none;">
+                <div class="user-brief">
+                    <div class="js-face-vip face-box">                     i
+                        <img class="face-img _qh_uimg" src="http://quc.qhimg.com/dm/64_64_100/t00df551a583a87f4e9.jpg" />                     
+                        <img class="face-vip" src="http://p8.yx-s.com/d/inn/36d42e30/vip_54x54.png" />                 
+                    </div>
+                    <b class="_qh_uname"></b>
+                </div>
+                <div class="pop-user-box">
+                    <div class="user-facebox pop-username ">
+                        <div class="face js-face-vip face-box">                         
+                            <img class="face-img _qh_uimg" src="http://quc.qhimg.com/dm/64_64_100/t00df551a583a87f4e9.jpg" />                         
+                            <img class="face-vip" src="http://p8.yx-s.com/d/inn/36d42e30/vip_54x54.png" />                     </div>
+                        <b class="username _qh_uname"></b>
+                        <br />
+                        <a href="###" class="logout _logout">退出</a>
+                    </div>
+                    <div class="user-navbar">
+                        <a href="list.html?category=favorite" class="my-favorite">
+                            <i></i>
+                            <b>    我的关注</b>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="search-box">
+            <div class="search-area">
+                <form action="list.html" method="get" name="search">
+                    <button class="btn" type="submit"></button>
+                    <input type="text" class="kw" name="kw" autocomplete="off" id="kw" value="" placeholder="输入台名/台号搜索" />                 </form>
+                    <div class="hot-list" id="js_hot_list">
+                        <div class="list-title">
+                            <i></i>
+                            <span>    热搜榜</span>
+                        </div>
+                        <ul id="search-hotwd-tmpl-box">
+                            <li>    
+                            <a href="list.html?kw=舞蹈">
+                                <i>    1</i>
+                                舞蹈</a>
+                            </li>
+                            <li>    
+                            <a href="list.html?kw=环驾">
+                                <i>    2</i>
+                                环驾</a>
+                            </li>
+                            <li>    
+                            <a href="list.html?kw=猫">
+                                <i>    3</i>
+                                猫</a>
+                            </li>
+                            <li>    
+                            <a href="list.html?kw=荷兰猪">
+                                <i style="background-color: rgb(186, 186, 186);">4</i>
+                                荷兰猪</a>
+                            </li>
+                            <li>    
+                            <a href="list.html?kw=大理">
+                                <i style="background-color: rgb(186, 186, 186);">5</i>
+                                大理</a>
+                            </li>
+                            <li>    
+                            <a href="list.html?kw=女神求生">
+                                <i style="background-color: rgb(186, 186, 186);">6</i>
+                                女神求生</a>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- 频道导航 -->
+    <div id="js_nav" class="channel-nav hd-ph">
+    <div class="wrap clearfix" bk="导航栏">
+        <ul id="main_nav">
+            <li class="nav_item home current">
+                <a href="index.html">
+                    <i>    
+                    </i> 首页
+                </a>
+            </li>
+            <li class="line">
+                <a href="javascript:;">
+                </a>
+            </li>
+            <li class="nav_item ">
+                <a href="list.html?category=hot" data-category="hot">
+                    <i>    
+                    </i> 分类名
+                </a>
+            </li>
+            <li class="nav_item  _nav_item_has_child">
+                <a href="list.html?category=9" data-category="9">分类名
+                </a>
+                <div class="_nav_sub_cat_pop">
+                    <ul>    
+                        <li>    
+                            <a href="list.html?category=9&amp;tag=11&amp;tagname=子分类名">子分类名
+                            </a>
+                        </li>
+                        <li>    
+                            <a href="list.html?category=9&amp;tag=12&amp;tagname=子分类名">子分类名
+                            </a>
+                        </li>
+                        <li>    
+                            <a href="list.html?category=9&amp;tag=13&amp;tagname=子分类名">子分类名
+                            </a>
+                        </li>
+                        <li>    
+                            <a href="list.html?category=9&amp;tag=14&amp;tagname=子分类名">子分类名
+                            </a>
+                        </li>
+                        </ul>
+                    <i class="_up_arrow">
+                    </i>
+                    </div>
+            </li>
+            <li class="nav_item history">
+                <a href="list.html?category=history" data-category="history">分类名
+                </a>
+            </li>
+            <li class="nav_item favorite ">
+                <a href="list.html?category=favorite" class="_need_login" data-category="favorite">
+                    <i>    
+                    </i> 分类名
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+    <!-- 页面内容 -->
+    <div id="js_page_main" class="wrap clearfix">
+        <div class="demo_content">
+            <p>index.html</p>
+            <p><a href="view.html?from=index">goto view.html</a></p>
+            <p>content go there</p>
+        </div>
+    </div>
+
+    <!-- footer -->
+<div class="page-footer" id="js-page-footer">
+  <div class="f-nav">
+    <a href="javascript:;" target="_blank">意见反馈</a>
+    <span class="line">|</span>
+    <a href="javascript:;" target="_blank">官方微博</a>
+    <span class="line">|</span>
+    <a href="javascript:;" class="add-favorite" onclick='alert("请使用按键Ctrl+d，收藏“"+document.getElementsByTagName("title")[0].innerText+"”");return false;'>加入收藏</a>
+    <span class="line">|</span>
+    <a href="javascript:;" target="_blank">客户端下载</a>
+    <span class="line">|</span>
+    <a href="mailto:yourname@domain.com">运营合作</a>
+  </div>
+  <div class="f-copyright">
+    Copyright©2015 DOMAIN.CN. All Rights Reserved.
+    项目名称
+    <a href="http://www.miibeian.gov.cn/state/outPortal/loginPortal.action" target="_blank">京ICP证XXX号</a>
+    京公网安备XXX号 
+  </div>
+</div>
+
+    
+<!-- 首页热门推荐模板 -->
+<script  type="text/x-jquery-tmpl" id="index-recommend-tmpl">
+    <div class="item-content ">
+        {%each list%}
+        {%if $index<5%}
+        <div class="item" title='${$value.titlePub}'>
+            <div class="item_wrapper">
+                <dl bk="热门推荐列表项${$index+1}">
+                    <dt>
+                        <a class="_play" href="view.html?sn=${$value.sn}" 
+                            data-title-pub='${$value.titlePub}' 
+                            data-sn='${$value.sn}' 
+                            data-view-num="${$value.viewNum}"
+                            data-thumbnail="${$value.thumbnail}"
+                        >
+                            <img  src="http://p0.qhimg.com/d/inn/4dcf1657/load_player_bg.png" data-original="${$value.thumbnail}" alt="${$value.titlePub}" class="lazy">
+							<span class="_play_icon"></span>
+                            <span class="overlay"></span>
+                        </a>
+                    </dt>
+                    <dd class="camera-title">
+                        <a href="view.html?sn=${$value.sn}" target="_blank">${$value.titlePub}</a>
+                    </dd>
+                    <dd>
+                        <span class="view"><i></i>${$.formatMoney($value.viewNum)}</span>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        {%/if%}
+        {%/each%}
+    </div>
+</script>
+
+<!-- 频道导航模板，在qcms板块维护 -->
+<!--{--cms:block id="pddhmb"}{/cms--}-->
+<!-- /频道导航模板 -->
+
+<!-- 广告slider模板 -->
+<script type="text/x-jquery-tmpl" id="index-banner-tmpl">
+  <div class="flexslider">
+    <ul class="slides">
+    {%each data%}
+      <li>
+        <a href="${$value.banLink}" target="_blank" title="${$value.banTitle}"><img alt="${$value.banTitle}" src="${$value.banPic}" /></a>
+      </li>
+    {%/each%}
+    </ul>
+  </div>
+</script>
+
+
+
+    
+<script src="http://s1.qhimg.com/lib/jquery/183.js"></script>
+<!--<script src="http://s1.qhimg.com/monitor/;monitor/8e133f74.js"></script>-->
+<!--[if lt IE 9]> 
+<script src="http://s1.qhimg.com/!1de3d708/shim/es5-shim,es5-sham.js"></script>
+<![endif]-->
+
+<script type="text/javascript" src="static/js/vendors.js?7bedb3bb36cc3a9344bf"></script><script type="text/javascript" src="static/js/index.js?7bedb3bb36cc3a9344bf"></script></body>
+</html>
